@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 1.5rem;
+    background: linear-gradient(to right, #F5F983 0%, #393B01 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.question-container {
+    width: 60%;
+    margin: 7vh auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 3rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.answers {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+
+button.answer,
+button.answer-good {
+    display: block;
+    padding: 0.5rem;
+    width: 8rem;
+    margin-top: 0.7rem;
+    align-self: center;
+    color: black;
+    border: 3px solid gray;
+    font-size: .9rem;
+
+}
+
+.chosen-answer {
+    background-color: lightslategray;
+}
+
+.check-score {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 12vh auto 2vh auto;
+
+
+}
+
+.next-question {
+    padding: 0.5rem 1.5rem;
+    width: 12rem;
+    position: relative;
+    background-color: #F5F983;
+    border: 3px solid #393B01;
+    color: #393B01;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+/*** poprawna i zła odpowiedź ***/
+
+
+.correct-answers {
+    background-color: green;
+}
+
+.wrong-answers {
+    background-color: red;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/*** finish div ***/
+
+
+.finish-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.finish-div p {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    color: #393B01;
+}
+
+.finish-div .again {
+    display: block;
+    width: 30%;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #F5F983;
+    border: 2px solid #393B01;
+    border-radius: 5%;
+    color: #393B01;
+}
+
+.finish-div .again:hover {
+    cursor: pointer;
+}
